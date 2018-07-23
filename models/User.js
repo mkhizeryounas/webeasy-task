@@ -7,7 +7,10 @@ const UserSchema = new Schema({
     type: String,
     unique: true
   },
-  geoLocation: Object,
+  geoLocation: {
+    city: String,
+    country: String
+  },
   createdAt: {
     type: Date,
     default: Date.now
